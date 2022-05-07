@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/fab_margin">
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_state"
+        android:text="@string/state_name"/>
+
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_state"
+        android:id="@+id/tv_active"
+        android:layout_marginTop="@dimen/vertical_margin_for_item"
+        android:text="@string/state_active"/>
+
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_active"
+        android:layout_marginTop="@dimen/vertical_margin_for_item"
+        android:id="@+id/tv_recover"
+        android:text="@string/state_recovered"/>
+
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_recover"
+        android:layout_marginTop="@dimen/vertical_margin_for_item"
+        android:id="@+id/tv_death"
+        android:text="@string/state_deaths"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_save"
+        app:icon="@drawable/ic_baseline_star_active"
+        app:iconTint="@color/active"
+        app:iconSize="32dp"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

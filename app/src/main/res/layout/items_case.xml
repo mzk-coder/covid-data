@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/fab_margin">
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_date"
+        android:text="@string/case_date"
+        />
+
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_date"
+        android:id="@+id/tv_totalconfirmed"
+        android:layout_marginTop="@dimen/vertical_margin_for_item"
+        android:text="@string/case_confirmed"
+        />
+
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_totalconfirmed"
+        android:layout_marginTop="@dimen/vertical_margin_for_item"
+        android:id="@+id/tv_totaldeceased"
+        android:text="@string/case_deceased"
+        />
+
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_totaldeceased"
+        android:layout_marginTop="@dimen/vertical_margin_for_item"
+        android:id="@+id/tv_totalrecovered"
+        android:text="@string/case_recovered"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_save"
+        app:icon="@drawable/ic_baseline_star_active"
+        app:iconTint="@color/active"
+        app:iconSize="32dp"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

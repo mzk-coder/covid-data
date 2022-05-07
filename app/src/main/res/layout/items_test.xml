@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="@dimen/fab_margin"
+    android:paddingTop="@dimen/fab_margin">
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_tested"
+        android:text="@string/test_as_of"
+        />
+
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tested"
+        android:id="@+id/tv_daily_rtpcr"
+        android:layout_marginTop="@dimen/vertical_margin_for_item"
+        android:text="@string/test_daily_rtpcr"
+        />
+
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_daily_rtpcr"
+        android:layout_marginTop="@dimen/vertical_margin_for_item"
+        android:id="@+id/tv_sample_reported"
+        android:text="@string/test_report_today"
+        />
+
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sample_reported"
+        android:layout_marginTop="@dimen/vertical_margin_for_item"
+        android:id="@+id/tv_total_doses"
+        android:text="@string/test_total_does"/>
+
+    <TextView
+        style="@style/TextView.ListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_doses"
+        android:layout_marginTop="@dimen/vertical_margin_for_item"
+        android:text="@string/test_source"
+        android:id="@+id/tv_source"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        app:layout_constraintStart_toEndOf="@id/tv_source"
+        app:layout_constraintTop_toTopOf="@id/tv_source"
+        app:layout_constraintBottom_toBottomOf="@id/tv_source"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:text="@string/click_to_view"
+        android:id="@+id/btn_source"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_save"
+        app:icon="@drawable/ic_baseline_star_active"
+        app:iconTint="@color/active"
+        app:iconSize="32dp"
+        android:layout_marginBottom="@dimen/fab_margin"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

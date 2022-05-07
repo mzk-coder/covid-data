@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CovidData</string>
+
+    <string name="cases">Cases</string>
+    <string name="states">States</string>
+    <string name="test">Tests</string>
+
+    <string name="case_date">Date %s</string>
+    <string name="case_confirmed">Total Confirmed %s</string>
+    <string name="case_deceased">Total Deceased %s</string>
+    <string name="case_recovered">Total Recovered %s</string>
+
+    <string name="state_name">State %s</string>
+    <string name="state_active">Active %s</string>
+    <string name="state_recovered">Recovered %s</string>
+    <string name="state_deaths">Deaths %s</string>
+
+    <string name="test_as_of">Tested as of: %s</string>
+    <string name="test_daily_rtpcr">Daily RTPCR samples collected: %s</string>
+    <string name="test_report_today">Samples reported today: %s</string>
+    <string name="test_total_does">Total doses administered: %s</string>
+    <string name="test_source">"Source: "</string>
+    <string name="click_to_view"><u>Click to view</u></string>
+    <string name="colon">:</string>
+
+
+</resources>
